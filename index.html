@@ -2,23 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Lantern Glades</title>
     <style>
-        html, body { margin: 0; height: 100%; background: #0d1424; color: #e8e2c8; font-family: system-ui, sans-serif; }
-        #app { min-height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 16px; box-sizing: border-box; }
-        h1 { font-weight: 600; letter-spacing: 0.04em; margin: 0 0 8px; }
-        p { margin: 4px 0; opacity: 0.75; }
-        #build { font-size: 12px; opacity: 0.45; margin-top: 24px; }
+        html, body { margin: 0; height: 100%; background: #1e3129; overflow: hidden; }
+        #game-container { width: 100vw; height: 100vh; height: 100dvh; }
     </style>
-  <script type="module" crossorigin src="./assets/index-CPbpGtC7.js"></script>
+  <script type="module" crossorigin src="./assets/index-D-73FGM1.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/phaser-Byfjd-jA.js">
 </head>
 <body>
     <!-- Paths stay relative (./src/...) because the game is served from a subpath, joshlitwin.github.io/lantern-glades-play/. -->
-    <div id="app">
-        <h1>Lantern Glades</h1>
-        <p>Nothing to play yet. The lantern lab is being built.</p>
-        <div id="build"></div>
-    </div>
+    <div id="game-container"></div>
 </body>
 </html>
